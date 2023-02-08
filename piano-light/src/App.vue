@@ -1,7 +1,7 @@
 <template>
     <nav>
         <router-link to="/">Home</router-link> |
-        <router-link to="/piano">About</router-link>
+        <router-link to="/piano">Piano</router-link>
     </nav>
     <router-view />
 </template>
@@ -24,10 +24,11 @@
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.1);
+    height: 10vh;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 30px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 nav a {

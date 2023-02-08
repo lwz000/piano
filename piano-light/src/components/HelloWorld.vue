@@ -1,6 +1,6 @@
 <template>
     <div class="hello">
-        <h1>这是只个主页</h1>
+        <h1>大佬又来弹琴啦</h1>
     </div>
 </template>
 
@@ -15,4 +15,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1 {
+    margin-top: 20px;
+}
 </style>
