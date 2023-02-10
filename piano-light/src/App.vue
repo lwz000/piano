@@ -1,10 +1,27 @@
 <template>
-    <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/piano">Piano</router-link>
-    </nav>
+    <div class="top">
+        <p>{{ time }}</p>
+        <nav>
+            <router-link to="/">Home</router-link> |
+            <router-link to="/page">XXX</router-link> |
+            <router-link to="/piano">Piano</router-link>
+        </nav>
+    </div>
     <router-view />
 </template>
+<script setup>
+import { ref } from "vue";
+
+let date = new Date();
+console.log(date);
+let time =
+    date.getFullYear() +
+    " 年 " +
+    (date.getMonth() + 1) +
+    " 月 " +
+    date.getDate() +
+    " 日 ";
+</script>
 
 <style>
 * {
@@ -13,6 +30,14 @@
     list-style: none;
     list-style: none;
     user-select: none;
+    text-decoration: none;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #app {
@@ -28,7 +53,6 @@ nav {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.6);
     padding: 30px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {

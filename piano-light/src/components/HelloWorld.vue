@@ -1,6 +1,6 @@
 <template>
     <div class="hello">
-        <h1>大佬又来弹琴啦</h1>
+        <h1>只是个标题</h1>
     </div>
 </template>
 
