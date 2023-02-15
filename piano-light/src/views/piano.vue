@@ -221,6 +221,9 @@ audio {
     height: 57px;
 }
 .change-btn {
+    position: absolute;
+    right: 20px;
+    top: 20%;
     width: 280px;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.3);
